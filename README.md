@@ -1,7 +1,7 @@
 # 🚀 Bevy Launchpad
 
-[![Crates.io](https://img.shields.io/crates/v/bevy_launchpad.svg)](https://crates.io/crates/bevy-launchpad)
-[![Docs.rs](https://docs.rs/bevy-launchpad/badge.svg)](https://docs.rs/bevy-launchpad)
+[![Crates.io](https://img.shields.io/crates/v/bevy_launchpad.svg)](https://crates.io/crates/launchpad)
+[![Docs.rs](https://docs.rs/launchpad/badge.svg)](https://docs.rs/launchpad)
 [![Bevy](https://img.shields.io/badge/Bevy-0.18-blue)](https://bevyengine.org)
 
 **Production-ready launcher framework for Bevy** - includes splash screens, main menu, settings UI, localization, and smooth state transitions out of the box.
@@ -17,7 +17,7 @@ Add to your `Cargo.toml`:
 ```toml
 [dependencies]
 bevy = { version = "0.18", default-features = false, features = ["bevy_winit", "x11"] } # Adjust features as needed
-bevy-launchpad = { version = "0.1", features = ["ui", "2d"] }
+launchpad = { version = "0.1", features = ["ui", "2d"] }
 ```
 
 ## 📚 Examples
@@ -41,12 +41,12 @@ cargo run --example minimal_3d
 cargo install cargo-generate
 
 # Create new 2D game
-cargo generate --git https://github.com/teratron/bevy-launchpad \
+cargo generate --git https://github.com/zeegzoog/launchpad \
                 --name my-game \
                 templates/game-2d
 
 # Create new 3D game
-cargo generate --git https://github.com/teratron/bevy-launchpad \
+cargo generate --git https://github.com/zeegzoog/launchpad \
                 --name my-game \
                 templates/game-3d
 
@@ -71,12 +71,12 @@ cargo run
 
 ## 📖 Documentation
 
-- [Getting Started Guide](https://github.com/teratron/bevy-launchpad/blob/main/docs/getting-started.md)
-- [Architecture Overview](https://github.com/teratron/bevy-launchpad/blob/main/docs/architecture.md)
-- [API Documentation](https://docs.rs/bevy-launchpad)
-- [Theming Guide](https://github.com/teratron/bevy-launchpad/blob/main/docs/theming.md)
-- [Localization Guide](https://github.com/teratron/bevy-launchpad/blob/main/docs/localization.md)
-- [State Management](https://github.com/teratron/bevy-launchpad/blob/main/docs/state-management.md)
+- [Getting Started Guide](https://github.com/zeegzoog/launchpad/blob/main/docs/getting-started.md)
+- [Architecture Overview](https://github.com/zeegzoog/launchpad/blob/main/docs/architecture.md)
+- [API Documentation](https://docs.rs/launchpad)
+- [Theming Guide](https://github.com/zeegzoog/launchpad/blob/main/docs/theming.md)
+- [Localization Guide](https://github.com/zeegzoog/launchpad/blob/main/docs/localization.md)
+- [State Management](https://github.com/zeegzoog/launchpad/blob/main/docs/state-management.md)
 
 ## 🏗️ Architecture
 
@@ -86,7 +86,7 @@ Optimize your build by enabling only what you need in `Cargo.toml`:
 
 ```toml
 [dependencies]
-bevy-launchpad = { 
+launchpad = { 
     version = "0.1", 
     default-features = false,
     features = [
@@ -119,8 +119,8 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ```bash
 # Clone the repository
-git clone https://github.com/teratron/bevy-launchpad
-cd bevy-launchpad
+git clone https://github.com/zeegzoog/launchpad
+cd launchpad
 
 # Run tests
 cargo test --workspace

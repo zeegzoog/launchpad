@@ -454,7 +454,7 @@ graph LR
 Предлагаемая расширенная структура проекта с учётом выявленных пробелов:
 
 ```plaintext
-bevy-launchpad/
+launchpad/
 ├── docs/
 │   ├── architecture.md             # Основная спецификация
 │   ├── architecture-analysis.md    # Данный документ
